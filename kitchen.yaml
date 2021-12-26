@@ -1,0 +1,21 @@
+---
+driver:
+  name: "terraform"
+  root_module_directory: "test/awspec"
+  command_timeout: 3600
+
+provisioner:
+  name: "terraform"
+
+platforms:
+  - name: "aws"
+
+verifier:
+  name: "awspec"
+
+suites:
+  - name: "default"
+    verifier:
+      name: "awspec"
+      patterns:
+      - "test/awspec/main.rb"
