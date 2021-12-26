@@ -1,9 +1,10 @@
 ## Usage
 
 ```sh
-module "terraform-aws-glue-job" {
-  source  = ""
+module "glue-job" {
+  source  = "pquintero/glue-job/aws"
   version = "0.0.1"
+  # insert the 12 required variables here
 }
 ```
 
