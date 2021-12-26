@@ -5,7 +5,7 @@ variable "aws_glue_default_service_role" {
 }
 
 variable "project_name" {
-  type        = map
+  type        = map(any)
   description = "Name of the project."
   default = {
     dev  = "bancoripleyperu-dm-dev"
@@ -17,9 +17,9 @@ variable "project_name" {
 variable "env" {
   description = "env: dev or qa or prod"
   type        = string
- # default = {
- #   dev  = "dev"
- #   qa   = "qa"
- #   prod = "prod"
- # }
+  # default = {
+  #   dev  = "dev"
+  #   qa   = "qa"
+  #   prod = "prod"
+  # }
 }

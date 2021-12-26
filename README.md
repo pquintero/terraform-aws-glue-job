@@ -3,7 +3,7 @@
 ```sh
 module "glue-job" {
   source  = "pquintero/glue-job/aws"
-  version = "0.0.1"
+  version = "0.0.2"
   # insert the 12 required variables here
 }
 ```
